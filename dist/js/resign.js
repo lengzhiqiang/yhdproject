@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".zhuce").click(function(){$.ajax({method:"post",url:"../server/resign.php",data:{username:$("#un2").val(),password:$("#pw2").val()},dataType:"json",success:function(e){1==e.code?location.href="../pages/index.html":alert(e.msg)}})})});
